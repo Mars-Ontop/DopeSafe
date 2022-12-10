@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+    image-rendering: crisp-edges;
+}
+
+html {
+    background-color: rgb(226, 226, 226);
+}
+
+.announcement {
+    background-color: rgb(29, 29, 29);
+    color: rgb(226, 226, 226);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.8vw;
+    font-family: 'VT323';
+    padding-top: 4px;
+    padding-bottom: 3px;
+    position: sticky;
+    top: 0px;
+}
+
+
+
+
+
+
+/* NAVBAR*/
+
+nav {
+    align-items: center;
+    font-family: 'VT323', monospace;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+nav h1 {
+    font-size: 2.5vw;
+    background-color: rgb(29, 29, 29);
+    color: rgb(226, 226, 226);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 999px;
+}
+
+nav a {
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+    font-size: 1.8vw;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-bottom: 2px solid rgb(226, 226, 226);
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    border-color: rgb(58, 58, 58);
+    color:rgb(58, 58, 58);
+}
+
+nav div {
+    margin-top: 10px;
+}
+
+nav div .active {
+    border-color: rgb(29, 29, 29);
+}
+
+
+
+
+
+
+
+/* MAIN */
+
+.main-intro-h2 {
+    font-family: 'VT323';
+    color:rgb(29, 29, 29);
+    font-size: 3vw;
+    margin-left: 150px;
+    margin-top: 90px;
+}
+
+.main-intro-p {
+    font-family: 'VT323';
+    margin-left: 170px;
+    font-size: 1.6vw;
+    margin-top: 10px;
+}
+
+.quick-nav-h2 {
+    font-family: 'VT323';
+    color:rgb(29, 29, 29);
+    font-size: 3vw;
+    margin-top: 90px;
+    margin-left: 80px;
+}
+
+main {
+    display: flex;
+}
+
+main div ul li {
+    list-style-type: none;
+}
+
+main div ul li a {
+    font-family: 'VT323';
+    color:rgb(58, 58, 58);
+    font-size: 2vw;
+    margin-left: 110px;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(226, 226, 226);
+    transition: linear 0.4s;
+}
+
+main div ul li a:hover {
+    border-color: rgb(29, 29, 29);
+}
+
+
+
+
+
+
+
+
+/* FEATURED GUIDES*/
+
+.our-promises-title {
+    font-family: 'VT323';
+    color:rgb(29, 29, 29);
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.our-promises {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.our-promises-item {
+    width: 20%;
+    height: 50vh;
+    box-shadow:   -10px 0 0 0 rgb(29, 29, 29),
+    10px 0 0 0 rgb(29, 29, 29),
+    0 -10px 0 0 rgb(29, 29, 29),
+    0 10px 0 0 rgb(29, 29, 29);
+}
+
+.our-promises-item-logo {
+    width: 100%;
+    box-shadow: 0 10px 0 0 rgb(29, 29, 29);
+}
+
+.our-promises-item-title {
+    font-family: 'VT323';
+    color: rgb(29, 29, 29);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2vw;
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: 140px;
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer-logo {
+    font-family: 'VT323';
+    color: rgb(226, 226, 226);
+    font-size: 3vw;
+}
+
+.footer-credits {
+    margin-top: -2px;
+    font-family: 'VT323';
+    color: rgb(145, 145, 145);
+    font-size: 1.7vw;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-links a {
+    font-family: 'VT323';
+    color: rgb(145, 145, 145);
+    font-size: 2vw;
+    margin-bottom: 30px;
+    text-decoration: none;
+    border-bottom: solid 2px rgb(29, 29, 29);
+    transition: 0.4s;
+}
+
+.footer-links a:hover {
+    border-color: rgb(145, 145, 145);
+}
+
+@media only screen and (max-width: 600px) {
+    /* ANNOUNCEMENT */
+
+    .announcement {
+        font-size: 7vw;
+    }
+    
+    /* NAVBAR */
+
+    body nav h1 {
+        font-size: 7vw;
+        margin-left: -230px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    } 
+
+    .nav-links a {
+        font-size: 5vw;
+        border: 0px;
+        float: left;
+        margin-left: -180px;
+        padding: 30px;
+    }
+
+    body nav .toggle-button {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .nav-links.show {
+        display: flex;
+    } 
+
+    /* MAIN */
+
+    main {
+        justify-content: center;
+        display: block;
+    }
+
+    main div ul {
+        display: none;
+    }
+
+    .main-intro-p {
+        display: none;
+    }
+
+    .main-intro-h2 {
+        text-align: center;
+        margin-left: 0px;
+        font-size: 8vw;
+        margin-bottom: 500px;
+    }
+
+    .main-down-icon {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        display: block;
+        margin-top: -300px;
+    }
+
+    /* FEATURED GUIDES */
+    .our-promises-title {
+        font-size: 8vw;
+    }
+
+    .our-promises {
+        display: block;
+        margin-left: 17.5%;
+        margin-right: 0%;
+        justify-content: center;
+    }
+
+    .our-promises-item {
+        width: 65vw;
+        margin-bottom: 40px;
+    }
+
+    .our-promises-item-title {
+        font-size: 5vw;
+    }
+
+    /* FOOTER */
+    .footer {
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    .footer-logo {
+        font-size: 9vw;
+    }
+
+    .footer-credits {
+        font-size: 6vw;
+    }
+
+    .footer-links a {
+        font-size: 5vw;
+    }
+}
+
+.main-down-icon {
+    width: 0px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 5.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 24px;
+    background-color: rgb(226, 226, 226);
+    border: 0px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+}
